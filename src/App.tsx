@@ -2,23 +2,24 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const name = ['JUan'];
+function myNameIs() {
+  return (
+    <div>
+      <h3>My</h3>
+      <h3>Name</h3>
+      <h3>Is</h3>
+      <h3>{name[0]}</h3>
+    </div>
+  );
+}
+
 function App() {
+  const bandNames = ['band1', 'band2', 'band3'];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>{bandNames[0]}</h1>
     </div>
   );
 }
